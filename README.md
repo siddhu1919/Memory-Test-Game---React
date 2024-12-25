@@ -131,4 +131,5 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 ---
 
 ### 🌟 Play Now and Have Fun! 🎉
-**Link to Play now :** 
+**Link to Play now :** [Here](https://memory-test-game-react.vercel.app/
+)
