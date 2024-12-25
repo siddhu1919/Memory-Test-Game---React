@@ -206,7 +206,6 @@ const MemoryGame = () => {
             <h2 className="text-2xl font-bold mb-4">You Lost!</h2>
             <p className="mb-4">Better luck next time!</p>
             <button
-              className="transition-all duration-300 ease-in-out"
               onClick={() => {
                 setShowLossModal(false);
                 reset();
