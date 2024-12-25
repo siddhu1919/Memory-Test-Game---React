@@ -178,19 +178,19 @@ const MemoryGame = () => {
             <div className="space-x-4">
               <button
                 onClick={() => handleDifficultySelection("easy")}
-                className="bg-green-500 text-white px-4 py-2 rounded-md"
+                className="bg-green-500 text-white px-4 py-2 rounded-md  transition-all duration-300 ease-in-out active:scale-95"
               >
                 Easy
               </button>
               <button
                 onClick={() => handleDifficultySelection("medium")}
-                className="bg-yellow-500 text-white px-4 py-2 rounded-md"
+                className="bg-yellow-500 text-white px-4 py-2 rounded-md transition-all duration-300 ease-in-out active:scale-95"
               >
                 Medium
               </button>
               <button
                 onClick={() => handleDifficultySelection("hard")}
-                className="bg-red-500 text-white px-4 py-2 rounded-md"
+                className="bg-red-500 text-white px-4 py-2 rounded-md transition-all duration-300 ease-in-out active:scale-95"
               >
                 Hard
               </button>
@@ -206,6 +206,7 @@ const MemoryGame = () => {
             <h2 className="text-2xl font-bold mb-4">You Lost!</h2>
             <p className="mb-4">Better luck next time!</p>
             <button
+              className="transition-all duration-300 ease-in-out"
               onClick={() => {
                 setShowLossModal(false);
                 reset();
@@ -231,9 +232,13 @@ const MemoryGame = () => {
       </div>
 
       {/* Game Board */}
-      <div className="grid grid-cols-3 gap-5 sm:grid-cols-4 px-2 py-4">
+      <div className="grid grid-cols-3 gap-5 sm:grid-cols-4 px-2 py-4 ">
         {cards.map((item) => (
-          <div onClick={() => handleClick(item.id)} key={item.id}>
+          <div
+            className="active:scale-95 transition-all duration-300 ease-in-out"
+            onClick={() => handleClick(item.id)}
+            key={item.id}
+          >
             {isFlippedCard(item.id) ? (
               <div
                 className={`flex flex-col justify-center items-center cursor-pointer ${item.color} p-2 rounded-md`}
@@ -265,7 +270,7 @@ const MemoryGame = () => {
       <div className="py-4">
         <button
           onClick={reset}
-          className="bg-white text-black hover:bg-white/70 rounded-md text-lg font-semibold px-4 py-1"
+          className="bg-white active:scale-95 transition-all duration-300 ease-in-out text-black hover:bg-white/70 rounded-md text-lg font-semibold px-4 py-1"
         >
           {gameWon ? "Play Again" : "Reset"}
         </button>
