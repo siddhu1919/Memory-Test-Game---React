@@ -7,42 +7,42 @@ const MemoryGame = () => {
   const fruits = [
     {
       name: "Apple",
-      image: "./public/assets/apple.png",
+      image: "./assets/apple.png",
       color: "bg-red-500",
     },
     {
       name: "Bananas",
-      image: "./public/assets/bananas.png",
+      image: "./assets/bananas.png",
       color: "bg-yellow-500",
     },
     {
       name: "Cherries",
-      image: "./public/assets/cherries.png",
+      image: "./assets/cherries.png",
       color: "bg-red-600",
     },
     {
       name: "Grapes",
-      image: "./public/assets/grapes.png",
+      image: "./assets/grapes.png",
       color: "bg-purple-500",
     },
     {
       name: "Orange",
-      image: "./public/assets/orange.png",
+      image: "./assets/orange.png",
       color: "bg-orange-500",
     },
     {
       name: "Pineapple",
-      image: "./public/assets/pineapple.png",
+      image: "./assets/pineapple.png",
       color: "bg-yellow-400",
     },
     // {
     //   name: "Strawberry",
-    //   image: "./public/assets/strawberry.png",
+    //   image: "./assets/strawberry.png",
     //   color: "bg-red-300",
     // },
     // {
     //   name: "Watermelon",
-    //   image: "./public/assets/watermelon.png",
+    //   image: "./assets/watermelon.png",
     //   color: "bg-green-500",
     // },
   ];
@@ -251,7 +251,7 @@ const MemoryGame = () => {
               <div className="flex flex-col justify-center items-center cursor-pointer bg-zinc-500 p-2 rounded-md">
                 <img
                   className="sm:w-[70px] drop-shadow-2xl hover:drop-shadow-md"
-                  src="./public/assets/questionmark.png"
+                  src={"./assets/questionmark.png"}
                   alt="Question mark"
                 />
                 {/* {item.name} */}
