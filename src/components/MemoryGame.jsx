@@ -7,42 +7,42 @@ const MemoryGame = () => {
   const fruits = [
     {
       name: "Apple",
-      image: "./src/assets/apple.png",
+      image: "./public/assets/apple.png",
       color: "bg-red-500",
     },
     {
       name: "Bananas",
-      image: "./src/assets/bananas.png",
+      image: "./public/assets/bananas.png",
       color: "bg-yellow-500",
     },
     {
       name: "Cherries",
-      image: "./src/assets/cherries.png",
+      image: "./public/assets/cherries.png",
       color: "bg-red-600",
     },
     {
       name: "Grapes",
-      image: "./src/assets/grapes.png",
+      image: "./public/assets/grapes.png",
       color: "bg-purple-500",
     },
     {
       name: "Orange",
-      image: "./src/assets/orange.png",
+      image: "./public/assets/orange.png",
       color: "bg-orange-500",
     },
     {
       name: "Pineapple",
-      image: "./src/assets/pineapple.png",
+      image: "./public/assets/pineapple.png",
       color: "bg-yellow-400",
     },
     // {
     //   name: "Strawberry",
-    //   image: "./src/assets/strawberry.png",
+    //   image: "./public/assets/strawberry.png",
     //   color: "bg-red-300",
     // },
     // {
     //   name: "Watermelon",
-    //   image: "./src/assets/watermelon.png",
+    //   image: "./public/assets/watermelon.png",
     //   color: "bg-green-500",
     // },
   ];
@@ -251,7 +251,7 @@ const MemoryGame = () => {
               <div className="flex flex-col justify-center items-center cursor-pointer bg-zinc-500 p-2 rounded-md">
                 <img
                   className="sm:w-[70px] drop-shadow-2xl hover:drop-shadow-md"
-                  src="./src/assets/questionmark.png"
+                  src="./public/assets/questionmark.png"
                   alt="Question mark"
                 />
                 {/* {item.name} */}
